@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<widget xmlns = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id = "com.phonegap.xcongreso"
+        version = "1.0.0">
+  
+  <!-- Nombre de la APP. -->
+  <name>CONGRESOAPP - DEMO</name>}
+  <!-- Descripcion de la APP -->
+  <description>
+    Mi 1er Aplicacion Hibrida! v-1.0
+  </description>
+  <!-- Datos del Autor. -->
+  <author href="#" email="giankrlo_91@hotmail.com">
+    Giancarlo Marin
+  </author>
+  <!-- Plataformas. -->
+  <gap:platforms>
+    <gap:platform name="ios" minVersion="4.2" />
+    <gap:platform name="android" minVersion="2.3" />
+    <gap:platform name="webos" />
+    <gap:platform name="symbian.wrt" />
+    <gap:platform name="blackberry" project="widgets"/>
+    <gap:platform name="winphone" />
+  </gap:platforms>
+  
+  <!-- Version de PhoneGap. -->
+  <preference name="phonegap-version" value="2.3.0" />
+  <!-- Duracion de la Pantalla de Bienvenida. -->
+  <preference name="splash-screen-duration" value="20000" />
+  <!-- default significa tanto horizontal y vertical están habilitados-->
+  <preference name="orientation" value="default" />
+  <!-- Oculta la barra de estado en la parte superior de la pantalla -->
+  <preference name="fullscreen" value="true" />
+  <!-- android: version minima de la SDK. MAX version is blank by default. -->
+  <preference name="android-minSdkVersion" value="7" />
+  
+  <!-- Configuraciones de los iconos por plataforma -->
+  <icon src="ApplicationIcon.png" gap:role="default" />
+  <icon src="www/icons/ios/icon.png" width="57" height="57" />
+  <icon src="www/icons/ios/icon-72.png" gap:platform="ios" width="72" height="72" />
+  <icon src="www/icons/ios/icon_at_2x.png" width="114" height="114" />
+  <icon src="www/icons/android/ldpi.png" gap:platform="android" gap:density="ldpi" />
+  <icon src="www/icons/android/mdpi.png" gap:platform="android" gap:density="mdpi" />
+  <icon src="www/icons/android/hdpi.png" gap:platform="android" gap:density="hdpi" />
+  <icon src="www/icons/bb/icon.png" gap:platform="blackberry" />
+  <icon src="www/icons/bb/icon_hover.png" gap:platform="blackberry" gap:state="hover"/>
+  <icon src="www/icons/winphone/icon.png" gap:platform="winphone" />
+  <icon src="www/icons/winphone/tileicon.png" gap:platform="winphone" gap:role="background" />
+  <icon src="www/icons/webos/icon.png" gap:platform="webos" />
+  <icon src="www/icons/webos/miniicon.png" gap:platform="webos" gap:role="mini" />
+  
+  <!-- Configuraciones de las Pantallas de Bienvenida por plataforma y su resolución -->
+  <gap:splash src="SplashScreenImage.jpg" />
+  <gap:splash src="www/splash/ios/Default-Landscape.png" width="1024" height="768" />
+  <gap:splash src="www/splash/ios/Default-Portrait.png" width="768" height="1024" />
+  <gap:splash src="www/splash/ios/Default.png" width="320" height="480" />
+  <gap:splash src="www/splash/ios/Default_at_2x.png" width="640" height="960" />
+  <gap:splash src="www/splash/android/ldpi.png" gap:platform="android" gap:density="ldpi" />
+  <gap:splash src="www/www/splash/android/mdpi.png" gap:platform="android" gap:density="mdpi" />
+  <gap:splash src="www/splash/android/hdpi.png" gap:platform="android" gap:density="hdpi" />
+  <gap:splash src="www/splash/bb/splash.png" gap:platform="blackberry" />
+  <gap:splash src="www/splash/winphone/splash.jpg" gap:platform="winphone" />
+
+  <!-- Caracteristicas que usará el movil. -->
+  <plugins>
+    <plugin name="Device"/>
+    <plugin name="Camera"/>
+    <plugin name="NetworkStatus"/>
+    <plugin name="Notification"/>
+    <plugin name="Capture"/>
+    <plugin name="SplashScreen"/>
+  </plugins>
+
+  <!-- Acceso a Internet -->
+  <access origin="*"/>
+
+</widget>
